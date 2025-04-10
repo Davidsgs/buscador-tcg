@@ -16,7 +16,7 @@ public class MagicLairScraper extends CardScraper {
         var elements = document.select("div.productCard__card");
         LogUtil.getLogger(this.getClass()).debug("Scraping {} cards", elements.size());
         return elements.stream()
-                .filter(element -> element.text().contains("Add to cart"))
+                .filter(element -> element.text().contains("Agregar al carrito"))
                 .limit(input.getMaxResults())
                 .map(item ->
                         Card
