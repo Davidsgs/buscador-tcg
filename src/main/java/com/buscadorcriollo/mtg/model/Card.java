@@ -10,5 +10,5 @@ public class Card {
     private String condition;
     private String edition;
     private String price;
-    private String urlImage;
+    private String imageUrl;
 }

@@ -8,4 +8,5 @@ public class CardDTO {
     private String condition;
     private String edition;
     private String price;
+    private String imageUrl;
 }
