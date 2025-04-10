@@ -32,6 +32,6 @@ public class SearchController {
                 .values(list.size())
                 .cardsNames(list)
                 .build();
-        return new ResponseEntity<>(response, response.getValues() == 0 ? HttpStatus.NOT_FOUND : HttpStatus.OK);
+        return new ResponseEntity<>(response, HttpStatus.OK);
     }
 }

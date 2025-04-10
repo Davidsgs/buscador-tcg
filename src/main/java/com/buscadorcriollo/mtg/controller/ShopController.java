@@ -27,6 +27,6 @@ public class ShopController {
             @RequestParam(required = false) TcgType tcgType
     ) {
         var response = shopService.getShops(tcgType);
-        return new ResponseEntity<>(response, response.isEmpty() ? HttpStatus.NOT_FOUND : HttpStatus.OK);
+        return new ResponseEntity<>(response, HttpStatus.OK);
     }
 }

@@ -1,5 +1,7 @@
 package com.buscadorcriollo.mtg.controller;
 
+import com.buscadorcriollo.mtg.dto.CardDTO;
+import com.buscadorcriollo.mtg.dto.StockResultDTO;
 import com.buscadorcriollo.mtg.enums.TcgType;
 import com.buscadorcriollo.mtg.service.StockService;
 import org.springframework.http.HttpStatus;
@@ -20,7 +22,7 @@ public class StockController {
     }
 
     @GetMapping("/{tcgType}/{shopId}/{cardName}")
-    public ResponseEntity<?> getStocks(
+    public ResponseEntity<StockResultDTO<CardDTO>> getStocks(
             @PathVariable TcgType tcgType,
             @PathVariable UUID shopId,
             @PathVariable String cardName,
@@ -32,7 +34,7 @@ public class StockController {
                 cardName,
                 maxResults.orElse(10)
         );
-        return new ResponseEntity<>(response, 0 == response.getResults() ? HttpStatus.OK : HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
 }
