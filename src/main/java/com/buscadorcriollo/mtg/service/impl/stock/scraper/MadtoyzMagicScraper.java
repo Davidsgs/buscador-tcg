@@ -29,7 +29,7 @@ public class MadtoyzMagicScraper extends CardScraper {
                                 .name(input.getCardName())
                                 .condition(item.getElementsByClass("badge").text())
                                 .price(item.getElementsByClass("woocommerce-Price-amount").text())
-                                .urlImage(item.getElementsByClass("swiper-lazy").attr("src"))
+                                .imageUrl(item.getElementsByClass("swiper-lazy").attr("src"))
                                 .build()
                 )
                 .collect(Collectors.toList());
