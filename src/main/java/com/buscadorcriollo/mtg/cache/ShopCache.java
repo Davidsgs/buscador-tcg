@@ -48,6 +48,7 @@ public class ShopCache {
                                         )
                                 )
                                 .url("https://www.magiclair.com.ar")
+                                .imageUrl("https://res.cloudinary.com/drwyltoy9/image/upload/v1744388926/magic-lair-logo_q3c5mq.webp")
                                 .build(),
                         Shop.builder()
                                 .id(UUID.randomUUID())
@@ -63,6 +64,7 @@ public class ShopCache {
                                         )
                                 )
                                 .url("https://www.mtgpirulo.com")
+                                .imageUrl("https://res.cloudinary.com/drwyltoy9/image/upload/v1744388926/Pirulo-Coleccionables-logo_bhamlw.webp")
                                 .build(),
                         Shop.builder()
                                 .id(UUID.randomUUID())
@@ -78,6 +80,7 @@ public class ShopCache {
                                         )
                                 )
                                 .url("https://madtoyzjugueteria.com/")
+                                .imageUrl("https://res.cloudinary.com/drwyltoy9/image/upload/v1744388926/madtoyz-logo_lj3rkx.webp")
                                 .build(),
                         Shop.builder()
                                 .id(UUID.randomUUID())
@@ -93,6 +96,7 @@ public class ShopCache {
                                         )
                                 )
                                 .url("https://www.labatikuevastore.com")
+                                .imageUrl("https://res.cloudinary.com/drwyltoy9/image/upload/v1744388925/batikueva-logo_xnwtoo.webp")
                                 .build(),
                         Shop.builder()
                                 .id(UUID.randomUUID())
@@ -108,6 +112,7 @@ public class ShopCache {
                                         )
                                 )
                                 .url("https://www.magicdealersstore.com")
+                                .imageUrl("https://res.cloudinary.com/drwyltoy9/image/upload/v1744388925/MagicDealers-Logo_dxrycq.webp")
                                 .build()
                 )
         );

@@ -22,6 +22,7 @@ public class Shop {
     private Map<TcgType, String> searchURL;
     private String url;
     private String shortName;
+    private String imageUrl = "https://res.cloudinary.com/drwyltoy9/image/upload/v1744389102/Trading_Card_Games_logo_wvgvop.webp";
 
     public String getSearchURL(TcgType type) {
         Optional<String> optUrl = Optional.ofNullable(searchURL.get(type));

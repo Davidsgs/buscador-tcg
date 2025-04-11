@@ -30,7 +30,7 @@ public class MagicDealersScraper extends CardScraper {
                                 .condition(getCondition(item))
                                 .edition(item.getElementsByClass("category").text())
                                 .price(String.format("ARS %s", item.select("span.regular.price").getFirst().text()))
-                                .urlImage(item.select("div.image a img").attr("src"))
+                                .imageUrl(item.select("div.image a img").attr("src"))
                                 .build()
                 )
                 .collect(Collectors.toList());

@@ -30,7 +30,7 @@ public class PiruloMagicScraper extends CardScraper {
                                 .name(item.getElementsByClass("name small-12 medium-4").text())
                                 .condition(item.getElementsByClass("variant-short-info variant-description").getFirst().text())
                                 .price(String.format("USD %s", item.getElementsByClass("regular price").getFirst().text()))
-                                .urlImage(item.select("img").attr("src"))
+                                .imageUrl(item.select("img").attr("src"))
                                 .build()
                 )
                 .collect(Collectors.toList());

@@ -25,7 +25,7 @@ public class MagicLairScraper extends CardScraper {
                                 .name(item.getElementsByClass("productCard__title").text())
                                 .condition(item.getElementsByClass("productChip__active").text())
                                 .price(item.getElementsByClass("productCard__price").text())
-                                .urlImage(item.getElementsByClass("productCard__img").attr("data-src"))
+                                .imageUrl(item.getElementsByClass("productCard__img").attr("data-src"))
                                 .build()
                 )
                 .collect(Collectors.toList());

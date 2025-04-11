@@ -29,7 +29,7 @@ public class BatikuevaMagicScraper extends CardScraper {
                                 .name(item.getElementsByClass("js-item-name").text())
                                 .condition(getCondition(item))
                                 .price(item.getElementsByClass("js-price-display").text())
-                                .urlImage("https:" + item.getElementsByClass("item-image").getFirst().children().getFirst().children().getFirst().children().getFirst().attr("data-srcset").split(",")[0].split(" ")[0])
+                                .imageUrl("https:" + item.getElementsByClass("item-image").getFirst().children().getFirst().children().getFirst().children().getFirst().attr("data-srcset").split(",")[0].split(" ")[0])
                                 .build()
                 )
                 .collect(Collectors.toList());
