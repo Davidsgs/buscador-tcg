@@ -14,4 +14,5 @@ public class ShopDTO {
     private String name;
     private String shortName;
     private String url;
+    private String imageUrl;
 }
